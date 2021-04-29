@@ -1,0 +1,39 @@
+{
+    "name": "rakeshlanjewar/sail-phpmyadmin",
+    "description": ":package_description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Rakesh Lanjewar",
+            "email": "rakesh.sakoli@gmail.com",
+            "homepage": "https://github.com/rakeshlanjewar"
+        }
+    ],
+    "homepage": "https://github.com/rakeshlanjewar/sail-phpmyadmin",
+    "keywords": ["Laravel", "SailPhpmyadmin"],
+    "require": {
+        "illuminate/support": "~7|~8",
+        "symfony/yaml": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rakeshlanjewar\\SailPhpmyadmin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rakeshlanjewar\\SailPhpmyadmin\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rakeshlanjewar\\SailPhpmyadmin\\SailPhpmyadminServiceProvider"
+            ]
+        }
+    }
+}
